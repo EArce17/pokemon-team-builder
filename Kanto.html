@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .rock { background-color: #B6A136; }
+    .water { background-color: #6390F0; }
+    .electric { background-color: #F7D02C; }
+    .grass { background-color: #7AC74C; }
+    .poison { background-color: #A33EA1; }
+    .psychic { background-color: #F95587; }
+    .fire { background-color: #EE8130; }
+    .ground { background-color: #E2BF65; }
+    .header 
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .header button 
+    {
+        position: absolute;
+        left: 0;
+    }
+        
+    body 
+    {
+        background-color: rgb(51, 51, 51);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px;
+    }
+    p
+    {
+        color: black;
+        text-align: center;
+    }
+    
+    h1 
+    {
+        color: white;
+        text-align: center;
+    }
+
+    .description
+    {
+        background-color: lightgray;
+        padding: 15px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .stylehb
+    {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 600px;
+        font-size: medium;
+        text-align: center;
+    }
+    .gymLeader 
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .stylegl
+    {
+        padding: 10px;
+        border-radius: 10px;
+        width: 150px;
+        font-size: medium;
+        text-align: center;
+    }
+    .leader-card {text-align: center;}
+
+    .leader-card > img 
+    {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .team {display: none;}
+    .team img
+    {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Kanto Gym Leaders</title>
+</head>
+<body>
+    <div class="header">
+       <button onclick="window.location.href='HomePage.html'" class="stylehb">
+        Return
+        </button>
+        <h1>Kanto Region</h1>
+        </div>
+    <p class="description">
+        Choose a Gym Leader to view their matchup information.
+    </p>
+
+    <div class="gymLeader">
+        
+        <div class="leader-card" onclick="showTeam(this)">
+            <img src="Trainers/brock.png" alt="Brock">
+            <div class="stylegl rock">
+                <h2>Brock<br>
+                Specialty: Rock</h2>
+            <div class="team">
+                <img src="Pokemon/geodude.png" alt="Geodude">
+                <p>Geodude <br> Level 12 <br>Type: Rock/Ground</p>
+                <img src="Pokemon/onix.png" alt="Onix">
+                <p>Onix <br> Level 14 <br> Type: Rock/Ground</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="leader-card" onclick="showTeam(this)">
+        <img src="Trainers/Misty.png" alt="Misty">
+        <div class ="stylegl water">
+            <h2>Misty<br>
+            Specialty: Water</h2>
+            <div class="team">
+                <img src="Pokemon/staryu.png" alt="Staryu">
+                <p>Staryu <br>Level 18 <br>Type: Water</p>
+                <img src="Pokemon/starmie.png" alt="Starmie">
+                <p>Starmie <br>Level 21 <br> Type: Water/Psychic</p>
+             </div>
+            </div>
+        </div>
+
+        <div class="leader-card" onclick="showTeam(this)">
+        <img src="Trainers/lt-surge.png" alt="Lt. Surge">
+        <div class ="stylegl electric">
+            <h2>Lt. Surge<br>
+            Specialty: Electric</h2>
+            <div class="team">
+                <img src="Pokemon/voltorb.png" alt="Voltorb">
+                <p>Voltorb <br>Level 21 <br> Type: Electric</p>
+                <img src="Pokemon/pikachu.png" alt="Pikachu">
+                <p>Pikachu <br> Level 18 <br> Type: Electric</p>
+                <img src="Pokemon/raichu.png" alt="Raichu">
+                <p>Raichu <br>Level 24 <br>Type: Electric</p>
+             </div>
+            </div>
+        </div>
+
+        <div class="leader-card" onclick="showTeam(this)">
+        <img src="Trainers/erika.png" alt="Erika">
+        <div class ="stylegl grass">
+            <h2>Erika<br>
+            Specialty: Grass </h2>
+            <div class="team">
+                <img src="Pokemon/victreebel.png" alt="Victreebel">
+                <p>Victreebel <br>Level 29 <br>Type: Grass/Poison</p>
+                <img src="Pokemon/tangela.png" alt="Tangela">
+                <p>Tangela <br> Level 24 <br>Type: Grass</p>
+                <img src="Pokemon/vileplume.png" alt="Vileplume">
+                <p>Vileplume <br>Level 29 <br>Type: Grass/Poison</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="leader-card" onclick="showTeam(this)">
+        <img src="Trainers/koga.png" alt="Koga">
+        <div class ="stylegl poison">
+            <h2>Koga<br>
+            Specialty: Poison </h2>
+            <div class="team">
+                <img src="Pokemon/koffing.png" alt="Koffing">
+                <p>Koffing <br> Level 37 <br> Type: Poison</p>
+                <img src="Pokemon/koffing.png" alt="Koffing">
+                <p>Koffing <br>Level 37 <br> Type: Poison</p>
+                <img src="Pokemon/muk.png" alt="Muk">
+                <p>Muk <br> Level 39 <br> Type: Poison</p>
+                <img src="Pokemon/weezing.png" alt="Weezing">
+                <p>Weezing <br> Level 43 <br> Type: Poison
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="leader-card" onclick="showTeam(this)">
+        <img src="Trainers/sabrina.png" alt="Sabrina">
+        <div class ="stylegl psychic">
+            <h2>Sabrina<br>
+            Specialty: Psychic</h2>
+            <div class="team">
+                <img src="Pokemon/kadabra.png" alt="Kadabra">
+                <p>Kadabra <br> Level 38 <br> Type: Psychic</p>
+                <img src="Pokemon/mr-mime.png" alt="Mr. Mime">
+                <p>Mr. Mime <br>Level 37 <br> Type: Psychic</p>
+                <img src="Pokemon/venomoth.png" alt="Venomoth">
+                <p>Venomoth <br> Level 38 <br> Type: Bug/Poison</p>
+                <img src="Pokemon/alakazam.png" alt="Alakazam">
+                <p>Alakazam <br> Level 43 <br> Type: Psychic
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="leader-card" onclick="showTeam(this)">
+        <img src="Trainers/blaine.png" alt="Blaine">
+        <div class ="stylegl fire">
+            <h2>Blaine<br>
+            Specialty: Fire</h2>
+            <div class="team">
+                <img src="Pokemon/growlithe.png" alt="Growlithe">
+                <p>Growlith <br> Level 42 <br> Type: Fire</p>
+                <img src="Pokemon/ponyta.png" alt="Ponyta">
+                <p>Ponyta <br>Level 40 <br> Type: Fire</p>
+                <img src="Pokemon/rapidash.png" alt="Rapidash">
+                <p>Rapidash <br> Level 42 <br> Type: Fire</p>
+                <img src="Pokemon/arcanine.png" alt="Arcanine">
+                <p>Arcanine <br> Level 47 <br> Type: Fire
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="leader-card" onclick="showTeam(this)">
+        <img src="Trainers/giovanni.png" alt="Giovanni">
+        <div class ="stylegl ground">
+            <h2>Giovanni<br>
+            Specialty: Ground</h2>
+            <div class="team">
+                <img src="Pokemon/rhyhorn.png" alt="Rhyhorn">
+                <p>Rhyhorn <br> Level 45 <br> Type: Rock/Ground</p>
+                <img src="Pokemon/dugtrio.png" alt="Dugtrio">
+                <p>Dugtrio <br>Level 42 <br> Type: Ground</p>
+                <img src="Pokemon/nidoqueen.png" alt="Nidoqueen">
+                <p>Nidoqueen <br> Level 44 <br> Type: Poison/Ground</p>
+                <img src="Pokemon/nidoking.png" alt="Nidoking">
+                <p>Nidoking <br> Level 45 <br> Type: Poison/Ground</p>
+                <img src="Pokemon/rhyhorn.png" alt="Rhyhorn">
+                <p>Rhyhorn <br> Level 50 <br> Type: Rock/Ground
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="teamBuilder.css">
+    <meta charset="UTF-8">
+    <Title>Pokemon Team Builder</Title>
+</head>
+<body>
+    <div class="header">
+        <button onclick="window.location.href='HomePage.html'" class="stylehb">
+         Return
+         </button>
+         <h1>Kanto Region</h1>
+         </div>
+         <p class="description">
+            Create a team of up to 6 pokémon and find out its strengths and weaknesses. <br>
+            (Only compatible for original 151 pokémon)
+        </p>
+    
+        <div class="search-container">
+            <input id="pokemon-search" type="search" placeholder="Search Pokémon...">
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <h2 class="header">Your team</h2>
+    <div id="pokemon-spot" class = "team"></div>
+    <h2 class="header">Team weaknesses</h2>
+    <div id="analysis"></div>
+    <script src="pokemonData.js"></script>
+    <script src="typeChart.js"> </script>
+    <script src="teamBuilder.js"></script>
+</body>
+</html>

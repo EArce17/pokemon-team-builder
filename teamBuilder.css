@@ -1,0 +1,136 @@
+.header
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header button
+{
+    position: absolute;
+    left: 0;
+}
+
+body
+{
+    background-color: rgb(51, 51, 51);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+}
+
+h2
+{
+    color: white;
+}
+
+.description
+{
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.stylehb
+{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 600px;
+    font-size: medium;
+    text-align: center;
+}
+
+.search-container
+{
+    position: relative;
+    width: 300px;
+}
+
+#pokemon-search
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+#search-results
+{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 8px #0002;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#search-results button
+{
+    background: white;
+    border: none;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#search-results button:hover
+{
+    background: #f0f0f0;
+}
+
+#pokemon-spot
+{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#pokemon-spot p
+{
+    color: white;
+    text-align: center;
+}
+
+#pokemon-spot img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.team
+{
+    background: repeating-linear-gradient( #226961 0 3px,#398D8D 3px 6px );
+    background-color: #398286;
+    padding: 15px;
+    border-radius: 10px;
+    width: 275px;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+    align-content: space-evenly;
+}
+#analysis p
+{
+    color: white;
+}
